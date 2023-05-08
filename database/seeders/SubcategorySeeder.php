@@ -20,40 +20,40 @@ class SubcategorySeeder extends Seeder
             /* Celulares y tablets */
             [
                 'category_id' => 1,
-                'name' => 'Celulares y smartphones',
-                'slug' => Str::slug('Celulares y smartphones'),
+                'name' => 'Trajes de baño',
+                'slug' => Str::slug('Trajes de baño'),
                 'color' => true
             ],
 
             [
                 'category_id' => 1,
-                'name' => 'Accesorios para celulares',
-                'slug' => Str::slug('Accesorios para celulares'),
+                'name' => 'Ropa deportiva',
+                'slug' => Str::slug('Ropa deportiva'),
             ],
 
             [
                 'category_id' => 1,
-                'name' => 'Smartwatches',
-                'slug' => Str::slug('Smartwatches'),
+                'name' => 'Pijamas',
+                'slug' => Str::slug('Pijamas'),
             ],
 
             /* TV, audio y video */
 
             [
                 'category_id' => 2,
-                'name' => 'TV y audio',
-                'slug' => Str::slug('TV y audio'),
+                'name' => 'Relojes',
+                'slug' => Str::slug('Relojes'),
             ],
             [
                 'category_id' => 2,
-                'name' => 'Audios',
-                'slug' => Str::slug('Audios'),
+                'name' => 'Sombreros',
+                'slug' => Str::slug('Sombreros'),
             ],
 
             [
                 'category_id' => 2,
-                'name' => 'Audio para autos',
-                'slug' => Str::slug('Audio para autos'),
+                'name' => 'Cinturones',
+                'slug' => Str::slug('Cinturones'),
             ],
 
             /* Consola y videojuegos */
@@ -85,63 +85,62 @@ class SubcategorySeeder extends Seeder
 
             [
                 'category_id' => 4,
-                'name' => 'Portátiles',
-                'slug' => Str::slug('Portátiles'),
+                'name' => 'Maquillajes',
+                'slug' => Str::slug('Maquillajes'),
             ],
 
             [
                 'category_id' => 4,
-                'name' => 'PC escritorio',
-                'slug' => Str::slug('PC escritorio'),
+                'name' => 'Cremas',
+                'slug' => Str::slug('Cremas'),
             ],
 
             [
                 'category_id' => 4,
-                'name' => 'Almacenamiento',
-                'slug' => Str::slug('Almacenamiento'),
+                'name' => 'Ceras',
+                'slug' => Str::slug('Ceras'),
             ],
 
             [
                 'category_id' => 4,
-                'name' => 'Accesorios computadoras',
-                'slug' => Str::slug('Accesorios computadoras'),
+                'name' => 'Delineadores',
+                'slug' => Str::slug('Delineadores'),
             ],
 
             /* Moda */
             [
                 'category_id' => 5,
-                'name' => 'Mujeres',
-                'slug' => Str::slug('Mujeres'),
+                'name' => 'Lapiceros',
+                'slug' => Str::slug('Lapiceros'),
                 'color' => true,
                 'size' => true
             ],
 
             [
                 'category_id' => 5,
-                'name' => 'Hombres',
-                'slug' => Str::slug('Hombres'),
+                'name' => 'Cuadernos',
+                'slug' => Str::slug('Cuadernos'),
                 'color' => true,
                 'size' => true
             ],
 
             [
                 'category_id' => 5,
-                'name' => 'Lentes',
-                'slug' => Str::slug('Lentes'),
+                'name' => 'Libros',
+                'slug' => Str::slug('Libros'),
             ],
 
             [
                 'category_id' => 5,
-                'name' => 'Relojes',
-                'slug' => Str::slug('Relojes'),
+                'name' => 'Marcadores',
+                'slug' => Str::slug('Marcadores'),
             ],
         ];
 
         foreach ($subcategories as $subcategory) {
-            
+
 
             Subcategory::create($subcategory);
-
         }
     }
 }

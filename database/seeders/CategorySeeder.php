@@ -18,32 +18,32 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'name' => 'Celulares y tablets',
-                'slug' => Str::slug('Celulares y tablets'),
-                'icon' => '<i class="fas fa-mobile-alt"></i>'
-            ],
-            [
-                'name' => 'TV, audio y video',
-                'slug' => Str::slug('TV, audio y video'),
-                'icon' => '<i class="fas fa-tv"></i>'
-            ],
-
-            [
-                'name' => 'Consola y videojuegos',
-                'slug' => Str::slug('Consola y videojuegos'),
-                'icon' => '<i class="fas fa-gamepad"></i>'
-            ],
-
-            [
-                'name' => 'Computación',
-                'slug' => Str::slug('Computación'),
-                'icon' => '<i class="fas fa-laptop"></i>'
-            ],
-
-            [
                 'name' => 'Moda',
                 'slug' => Str::slug('Moda'),
-                'icon' => '<i class="fas fa-tshirt"></i>'
+                'icon' => '*'
+            ],
+            [
+                'name' => 'Accesorios',
+                'slug' => Str::slug('Accesorios'),
+                'icon' => '*'
+            ],
+
+            [
+                'name' => 'Consola y video juegos',
+                'slug' => Str::slug('Consola y video juegos'),
+                'icon' => '*'
+            ],
+
+            [
+                'name' => 'Belleza',
+                'slug' => Str::slug('Belleza'),
+                'icon' => '*'
+            ],
+
+            [
+                'name' => 'Libreria',
+                'slug' => Str::slug('Libreria'),
+                'icon' => '*'
             ],
         ];
 
@@ -56,6 +56,5 @@ class CategorySeeder extends Seeder
                 $brand->categories()->attach($category->id);
             }
         }
-
     }
 }

@@ -5,20 +5,19 @@
                 <x-product-list :product="$product" />
 
             @empty
-            
+
                 <li class="bg-white rounded-lg shadow-2xl">
                     <div class="p-4">
                         <p class="text-lg font-semibold text-gray-700">
-                            Ningún producto coinide con esos parametros
+                            No hay resultados
                         </p>
                     </div>
                 </li>
-
             @endforelse
         </ul>
 
         <div class="mt-4">
-            {{$products->links()}}
+            {{ $products->links() }}
         </div>
     </div>
 </x-app-layout>
